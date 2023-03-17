@@ -18,7 +18,7 @@ public class A {
         // create an empty stack
         Stack<String> stack = new Stack<>();
  
-        // scan the text
+        // scan t he text
         for (int i = 0; i < s.length(); i++)
         {
             // if space is found, we found a word
