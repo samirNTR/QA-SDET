@@ -2,48 +2,67 @@ package Testing;
 
 import java.util.Scanner;
 
-//String inversion
-public class ReverseString3 {   
-static Scanner sc= new Scanner(System.in);
-public static String reverseword(String s)
-	
-{
-	
-String result= new String();
-int i=0;
-int n= s.length();
+//Reverse the alternate word      I LOVE JAVA-----> I EVOL JAVA
+public class ReverseString3 {
+	static Scanner sc = new Scanner(System.in);
 
-while(i<n)
-{   
-	
-	while(i<n && s.charAt(i)==' ')
-	i++;
-	if(i>=n)
-	break;
-	int j= i+1;
-	
-	while(j<n && s.charAt(j)!=' ')
-	j++;
-	String sub= s.substring(i,j);
-	if(result.length()==0)
-		result=sub;
-	else
-		
-	result= sub+" "+result;
-	i=j+1;
-	
-}
- return result;	
-	
-		
-}
-	public static void main(String[] args)
-	
+	public static String reverseAltWords(String s)
+
 	{
-	
-		System.out.println("Enter the String");
-		String str= sc.nextLine();
-		System.out.println(reverseword(str));
+
+		String[] str = s.split(" ");
+
+		String r = "";
+
+		for (int i = 0; i < str.length; i++)
+
+		{
+
+			if (i % 2 == 1)
+
+			{
+
+				str[i] = reverse(str[i]);
+
+			}
+
+			r = r + " " + str[i];
+
+		}
+
+		return r;
+
 	}
 
-}
+	public static String reverse(String s)
+
+	{
+
+		String rev = "";
+
+		for (int i = s.length() - 1; i >= 0; i--)
+
+		{
+
+			rev = rev + s.charAt(i);
+
+		}
+
+		return rev;
+
+	}
+
+	
+
+	public static void main(String[] args)
+
+	{
+		String s="Hello Good morning America";
+
+		String result=reverseAltWords(s);
+
+		System.out.println(result.substring(1));
+
+		}
+	}
+

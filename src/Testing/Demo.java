@@ -22,7 +22,9 @@ public class Demo {
 	//calling a the non-static function by using the object of the class  
 	obj.display();  
 	//calling a static function by using the class name  
-	Demo.show();  
+	Demo.show(); 
+	
+	
 	
 	//obj.show();
 	}  

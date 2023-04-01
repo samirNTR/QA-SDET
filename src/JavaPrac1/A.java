@@ -39,7 +39,7 @@ public class A {
         stack.push(s.substring(low));
  
         // construct the string by following the LIFO order
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder();   
         while (!stack.empty()) {
             sb.append(stack.pop()).append(' ');
         }
@@ -50,7 +50,7 @@ public class A {
  
     public static void main(String[] args)
     {
-        String s = "";
+        String s = " I LOVE JAVA";
  
         System.out.println(reverseText(s));
     }
