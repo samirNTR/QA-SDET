@@ -6,7 +6,32 @@ import java.util.Scanner;
 public class ReverseString3 {
 	static Scanner sc = new Scanner(System.in);
 
-	public static String reverseAltWords(String s)
+	public static void main(String[] args) {
+
+		System.out.println("Enter the required string");
+		String str = sc.nextLine();
+		
+		String words[]= str.split(" ");
+		
+		for(int i =0; i<words.length;i++)
+		{
+			
+			if(i%2==1)
+			{
+				words[i]= new StringBuilder(words[i]).reverse().toString();
+			}
+		}
+
+		
+		
+		String result= String.join(" ", words);
+		
+		System.out.println("the result is:-"+result);
+	}
+
+}
+
+/*	public static String reverseAltWords(String s)
 
 	{
 
@@ -66,3 +91,4 @@ public class ReverseString3 {
 		}
 	}
 
+*/
