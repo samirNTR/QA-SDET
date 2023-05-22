@@ -11,7 +11,7 @@ public class removeDuplicate2 {
 		
 		public static void charCount1(String str)
 		{
-			
+		
 			StringBuilder sb= new StringBuilder();
 			
 			Set<Character> set= new LinkedHashSet<>();

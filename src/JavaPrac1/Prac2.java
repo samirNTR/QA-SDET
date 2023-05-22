@@ -17,20 +17,21 @@ public class Prac2 {
 
 		String[] s1= str.split(" ");
 		
-		Set<String> mySet= new LinkedHashSet<String>();
 		
-		for(String x:s1)
-		{
-			mySet.add(x);
-			
-			
-		}
+	Set<String> mySet= new LinkedHashSet<String>();
+	
+	for(String s2:s1)
+	{
 		
-		Iterator<String> it= mySet.iterator();
-		while(it.hasNext())
-		{
-			System.out.print(it.next()+" ");
+		mySet.add(s2);
 		}
+	
+	Iterator it= mySet.iterator();
+	
+	while(it.hasNext())
+	{
+		System.out.print(" "+it.next());
+	}
 	}
 
 	public static void main(String[] args)

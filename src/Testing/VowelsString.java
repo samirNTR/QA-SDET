@@ -1,4 +1,4 @@
-package Testing;
+ package Testing;
 
 import java.util.Scanner;
 
@@ -26,16 +26,19 @@ import java.util.Scanner;
 	    }
 	
 	}*/
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 	      System.out.print("Enter a string: ");
-	      String str = scanner.nextLine();
-          scanner.close();
+	      String str = sc.nextLine();
+          sc.close();
 	      int count = 0;
 	      System.out.print("The vowels are:-");
-	      for (int i = 0; i < str.length(); i++) {
+	      for (int i = 0; i < str.length(); i++) 
+	      {
 	         char ch = str.charAt(i);
 	         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
-	             ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+	             ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') 
+	         
+	         {
 	            count++;
 	            System.out.print(ch + " ");
 	         }

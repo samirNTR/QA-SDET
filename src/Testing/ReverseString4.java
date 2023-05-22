@@ -37,16 +37,18 @@ public class ReverseString4 {
 		   
 		   }
 
-/*public class ReverseString {
-    public static void main(String[] args) {
+/*public class ReverseString4 {
+    public static void main(String[] args)
+     {
         String originalString = "I LOVE JAVA";
         String[] words = originalString.split(" ");
         String reversedString = "";
-        
-        for (int i = words.length - 1; i >= 0; i--) {
-            reversedString += words[i] + " ";
+
+        for (int i = words.length()-1; i >= 0; i--)
+         {
+            reversedString = reversedString+words[i] + " ";
         }
-        
+
         System.out.println(reversedString.trim());
     }
 }
