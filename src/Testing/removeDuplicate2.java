@@ -3,7 +3,7 @@ package Testing;
 import java.util.LinkedHashSet;
 import java.util.Scanner;
 import java.util.Set;
-                                    //Remove Duplicate Character
+                                    //Remove Duplicate Character/Repeated character
 public class removeDuplicate2 { 
 
 	
