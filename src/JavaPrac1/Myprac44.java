@@ -1,14 +1,46 @@
 package JavaPrac1;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+
 public class Myprac44 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		System.out.println("My name is java");
-		
+public static void main(String[] args)
+{
+	
+	HashMap<Integer, String> hm = new HashMap<Integer, String>();
+	
+	hm.put(1, "Apple");
+	hm.put(2,"Orange");
+	hm.put(3, "Potato");
+	hm.put(4,"Vinegar");
+	
+	
+	hm.forEach((key, value)->System.out.println(key+ " ->"+value));
+//	------------------------------------------------------------------------------//
+
+	        ArrayList<String> list = new ArrayList<>();
+	        list.add("Apple");
+	        list.add("Banana");
+	        list.add("Orange");
+
+	        // Traversing and printing the ArrayList using lambda expression
+	        list.forEach(item -> System.out.println(item));
+	        
+	        
+	        
+	     
+	    }
+	
+}
+
+	
+	//hm.forEach(       (key,value)->sysout(key+"-->"+value);
 	
 
-	}
+	
+	
 
-}
