@@ -23,6 +23,6 @@ public class ABC {
 		}
 		String result = String.join(" ", words);
 
-		System.out.println("The result is " + result);
+		System.out.println("The result is:- " + result);
 	}
 }

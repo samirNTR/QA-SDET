@@ -33,9 +33,9 @@ public class StringCharacterCount {
 
 		for (Map.Entry<Character, Integer> c1 : entryset) {
 
-			if (c1.getValue() > 1)
+			//if (c1.getValue() > 1)
 
-				System.out.println(c1.getKey() + "--> " + c1.getValue());
+				System.out.print(c1.getKey()+":>"+ c1.getValue());
 
 		}
 

@@ -10,7 +10,7 @@ public class Annagram {
 	  static String str1, str2;
 	  static Scanner sc= new Scanner(System.in);
 	  public static boolean Anagram1(char[] ch1 , char[] ch2)
-		{
+	  {
 			
 		int n1= ch1.length;
 		
