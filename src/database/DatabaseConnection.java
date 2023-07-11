@@ -8,19 +8,19 @@ import java.sql.Statement;
 public class DatabaseConnection {
 
     // JDBC driver and database URL
-    public  static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    public static final String DB_URL = "jdbc:mysql://localhost:3306/employeesdb1";
+    private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/employeesdb1";
 
     // Database credentials
-    public static final String DB_USER = "root";
-    public static final String DB_PASSWORD = "12welcome";
+    private static final String DB_USER = "root";
+    private static final String DB_PASSWORD = "12welcome";
 
     public static void main(String[] args)  
     {
         Connection connection = null;
         Statement statement = null;
         try {
-            // Step 1: Register JDBC Driver
+            // Step 1: Register JDBC Driver //instruct the Java runtime to load and initialize the driver class
             Class.forName(JDBC_DRIVER);
 
             // Step 2: Open a connection
@@ -49,6 +49,8 @@ public class DatabaseConnection {
             	System.out.println(" "+salary);
             	
             }
+            
+            //Step 4:-close the connection
             connection.close();
          
         }
