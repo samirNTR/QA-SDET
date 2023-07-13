@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class WordOccurrences {
 
-	
+
 	    public static void main(String[] args) {
 	        String sentence = "The quick brown fox jumps over the lazy dog the quick quick";
 	        printMostOccurredWords(sentence);

@@ -70,46 +70,46 @@ public class Reverse1 {
  * alphabets, punctuation marks, and spaces. We use the replaceAll method of the
  * String class to replace all lowercase alphabets [a-z] with an empty string
  * "".
- * 
+ *
  * The resulting string filteredStr only contains uppercase alphabets,
  * punctuation marks, and spaces. We print both the original string and the
  * filtered string using the println method of the System.out object. The output
  * of the program will be:
- * 
+ *
  * vbnet Copy code Original String: Hello World! This is a Java Program.
  * Filtered String: H W! T J P.
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  * /* String sentence = "I love JAAAVA more";
- * 
+ *
  * // Split the sentence into words String[] words = sentence.split("\\s+");
- * 
+ *
  * // Loop through each word for (String word : words) { // Check if the word
  * contains only lowercase letters if (word.matches("[a-z]+")) {
  * System.out.println(word); } } } }
- * 
- * 
- * 
- * 
- * 
- * 
- * 
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  * String str="Welcome to Java";
- * 
+ *
  * String[] words= str.split(" ");
- * 
+ *
  * String reverseWord=""; for(String w: words) {
- * 
- * 
+ *
+ *
  * StringBuilder sb= new StringBuilder(w); sb.reverse();
- * 
+ *
  * reverseWord=reverseWord+sb.toString()+" "; }
- * 
+ *
  * System.out.println(reverseWord); } }
  */

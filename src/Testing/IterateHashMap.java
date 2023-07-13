@@ -6,7 +6,7 @@ import java.util.Map;
 
 ///LAMBDA EXPRESSION ITERATION HASHMAP
 public class IterateHashMap {
-	
+
 
 	    public static void main(String[] args) {
 	        Map<String, Double> employeeSalary = new HashMap<>();

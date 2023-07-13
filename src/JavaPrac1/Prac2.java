@@ -1,10 +1,7 @@
 package JavaPrac1;
 
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -16,18 +13,18 @@ public class Prac2 {
 	public static void countChar(String str) {
 
 		String[] s1= str.split(" ");
-		
-		
-	Set<String> mySet= new LinkedHashSet<String>();
-	
+
+
+	Set<String> mySet= new LinkedHashSet<>();
+
 	for(String s2:s1)
 	{
-		
+
 		mySet.add(s2);
 		}
-	
+
 	Iterator it= mySet.iterator();
-	
+
 	while(it.hasNext())
 	{
 		System.out.print(" "+it.next());

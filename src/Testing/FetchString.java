@@ -10,7 +10,7 @@ public class FetchString {
 	public static String extractInt(String str) {
 
 		str = str.replaceAll("[^A-Za-z]", " ");
-	
+
 		// str = str.replaceAll("[^0-9]", " "); // regular expression
 		 str = str.trim();
 		// Replace all the consecutive white

@@ -3,8 +3,6 @@ package JavaPrac1;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
-import java.util.Set;
 
 
 	public class DuplicateCharacterRemover {
@@ -31,7 +29,7 @@ import java.util.Set;
 	}
 
 
-/*static Scanner sc= new Scanner(System.in);	
+/*static Scanner sc= new Scanner(System.in);
 
 	public static void charCount1(String str)
 	{

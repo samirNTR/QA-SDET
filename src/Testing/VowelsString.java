@@ -24,7 +24,7 @@ import java.util.Scanner;
 	        ch = Character.toLowerCase(ch);
 	        return (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u');
 	    }
-	
+
 	}*/
 		Scanner sc = new Scanner(System.in);
 	      System.out.print("Enter a string: ");
@@ -32,18 +32,18 @@ import java.util.Scanner;
           sc.close();
 	      int count = 0;
 	      System.out.print("The vowels are:-");
-	      for (int i = 0; i < str.length(); i++) 
+	      for (int i = 0; i < str.length(); i++)
 	      {
 	         char ch = str.charAt(i);
 	         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
-	             ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') 
-	         
+	             ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+
 	         {
 	            count++;
 	            System.out.print(ch + " ");
 	         }
 	      }
-	     
+
 	      System.out.println("\nNumber of vowels: " + count);
 	   }
 	}

@@ -1,13 +1,9 @@
 package JavaPrac1;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
-import java.util.Stack;
 
 public class ReverseString {
-	
+
 
 	/**
 	 * @param args
@@ -16,26 +12,26 @@ public class ReverseString {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+
 		int size,temp;
 
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("Enter the required string: ");
-		
+
 		String str=sc.nextLine();
-		
+
 		char[] ch= str.toCharArray();
-		
+
 		size= ch.length;
 		for(int i=0; i<size; i++)
 		{
-			
+
 			for(int j= i+1; j<size; j++)
 			{
-				
-				if(ch[i]<ch[j]) { 
-					
+
+				if(ch[i]<ch[j]) {
+
 					temp=ch[i];
 					ch[i]= ch[j];
 					ch[j]= (char)temp;
@@ -43,10 +39,10 @@ public class ReverseString {
 			}
 		}
 System.out.println("Sorted array is: "+ new String( ch));
-	
-	
+
+
 	}
-	
+
 
 	/*public static void charCount(String str) {
 
@@ -75,17 +71,17 @@ System.out.println("Sorted array is: "+ new String( ch));
 		}
 
 		Set<Map.Entry<Character, Integer>> entryset = hm.entrySet();
-		
+
 
 			for (Map.Entry<Character, Integer> e1 : entryset)
 			{
 				 //if(e1.getValue() >1)
-				 
+
 				System.out.println(e1.getKey() + "-->" + e1.getValue());
 			}
 
 		}
-	
+
 
 	public static void main(String[] args) {
 

@@ -1,21 +1,22 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
+
         System.out.print("Enter the size of the list: ");
         int size = scanner.nextInt();
-        
+
         int[] digits = new int[size];
         System.out.print("Enter the values: ");
         for (int i = 0; i < size; i++) {
             digits[i] = scanner.nextInt();
         }
-        
+
         int[] result = solution(digits);
         System.out.println("Output: " + Arrays.toString(result));
-        
+
         scanner.close();
     }
 

@@ -16,7 +16,7 @@ public class Employee {
 
 	}
 
-	Employee(String Scooter_Name)	
+	Employee(String Scooter_Name)
 	{
 
 		this.Scooter_Name=Scooter_Name;
@@ -37,7 +37,7 @@ public class Employee {
 
 
 
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		int j=10007777;
 		final int side= 100;

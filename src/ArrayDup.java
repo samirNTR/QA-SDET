@@ -11,7 +11,7 @@ public class ArrayDup {
 		int arr[]= new int[] {33,44,55,33,33};
 
 
-		Map<Integer, Integer>hm = new HashMap<Integer,Integer>();
+		Map<Integer, Integer>hm = new HashMap<>();
 
 		for(int no:arr)
 		{
@@ -27,19 +27,19 @@ public class ArrayDup {
 			}
 
 		}
-		
+
 	Set<Map.Entry<Integer,Integer>> es= hm.entrySet();
-	
+
 	for(Map.Entry<Integer, Integer> es1:es)
 	{
-		
+
 		//if(es1.getValue()>1)
-			
-			
+
+
 			System.out.println(es1.getKey()+"--> "+ es1.getValue());
 			//System.out.println(es1.getKey()+" ");
 	}
-		
-		
+
+
 	}
 	}

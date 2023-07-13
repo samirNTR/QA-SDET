@@ -1,6 +1,5 @@
      package Testing;
 
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Scanner;
@@ -16,7 +15,7 @@ public class removeDuplicate {
 
 		String[] str1 = str.split(" ");
 
-		Set<String> mySet = new LinkedHashSet<String>();
+		Set<String> mySet = new LinkedHashSet<>();
 		for (String x : str1) {
 			mySet.add(x);
 

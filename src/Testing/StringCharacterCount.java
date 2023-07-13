@@ -1,9 +1,7 @@
 package Testing;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -12,7 +10,7 @@ public class StringCharacterCount {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void charCount(String str1) {
-		Map<Character, Integer> hm = new HashMap<Character, Integer>();
+		Map<Character, Integer> hm = new HashMap<>();
 
 		char ch[] = str1.toCharArray();
 
