@@ -1,6 +1,6 @@
 package Testing;
 
-public class ArrayAddition {
+public class ArrayAddition1 {
 
 	public static int calculateSum(int[] array) {
 		int sum = 0;
