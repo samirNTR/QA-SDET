@@ -1,16 +1,17 @@
 package Testing;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
-public class StringCharacterCount {
+public class StringCharacterCount1 {
 
 	static Scanner sc = new Scanner(System.in);
 
 	public static void charCount(String str1) {
-		Map<Character, Integer> hm = new HashMap<>();
+		Map<Character, Integer> hm = new LinkedHashMap<Character, Integer>();
 
 		char ch[] = str1.toCharArray();
 
@@ -18,14 +19,14 @@ public class StringCharacterCount {
 			if (!String.valueOf(c).isBlank())
 
 				if (hm.containsKey(c))
-
+				{
 					hm.put(c, hm.get(c) + 1);
-
-				else
+				}
+				else {
 
 					hm.put(c, 1);
 
-		}
+		}}
 
 		Set<Map.Entry<Character, Integer>> entryset = hm.entrySet();
 
@@ -33,7 +34,7 @@ public class StringCharacterCount {
 
 			//if (c1.getValue() > 1)
 
-				System.out.print(c1.getKey()+":>"+ c1.getValue());
+				System.out.println(c1.getKey()+":>"+ c1.getValue());
 
 		}
 
