@@ -7,7 +7,7 @@ import java.util.Set;
 
 	public class VowelFrequency {
 
-	    public static void counthm(String str) {
+	    public static void countVowel(String str) {
 	        str = str.toLowerCase(); // Convert the string to lowercase for case-insensitive matching
 
 	        // Create a map to store the frequency of each vowel
@@ -47,7 +47,7 @@ import java.util.Set;
 
 	    public static void main(String[] args) {
 	        String input = "Hello World";
-	        counthm(input);
+	        countVowel(input);
 	    }
 	}
 
