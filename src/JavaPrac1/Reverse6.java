@@ -2,7 +2,7 @@ package JavaPrac1;
 
 import java.util.Scanner;
 
-public class Reverse1 {
+public class Reverse6 {
 
 	static Scanner sc = new Scanner(System.in);
 
