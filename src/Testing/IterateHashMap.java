@@ -16,9 +16,17 @@ public class IterateHashMap {
 	        employeeSalary.put("Steven", 134000.00);
 
 	        System.out.println("=== Iterating over a HashMap using Java 8 forEach and lambda ===");
-	        employeeSalary.forEach((employee, salary) -> {
+	        employeeSalary.forEach((employee, salary) -> 
+	        
+	        {
+	        	
 	            System.out.println(employee + " => " + salary);
-	        });
+	        }
+	        
+	        );
 
 	    }
 }
+
+
+
