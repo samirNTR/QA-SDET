@@ -13,10 +13,10 @@ public class Numerology {
 	            if (number == 0) {
 	                number = sum;
 	                sum = 0;
-	            }
-	            sum += number % 10;
-	            number /= 10;
-	        }
+	            }                                                                                  
+	            sum = sum+number % 10;                                       
+	            number =number/ 10;                                            
+	        }                                                                                      
 
 	        return sum;
 	    }
