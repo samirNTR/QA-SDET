@@ -9,7 +9,7 @@ public class ReverseString4_1 {
 		String[] words = originalString.split(" ");
 		String reversedString = "";
 
-		for (int i = words.length -1; i >= 0; i--) {
+		for (int i = words.length-1; i >= 0; i--) {
 			reversedString = reversedString + words[i] + " ";
 		}
 

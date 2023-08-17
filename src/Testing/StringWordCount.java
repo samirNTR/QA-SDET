@@ -12,7 +12,7 @@ public class StringWordCount {
     static Scanner sc = new Scanner(System.in);
 
     public static void wordCount(String str) {
-        Map<String, Integer> hm = new HashMap<>();
+        Map<String, Integer> hm = new LinkedHashMap<>();
         String[] words = str.split("\\s+");
 
         for (String word : words) {
@@ -36,6 +36,81 @@ public class StringWordCount {
         wordCount(str);
     }
 }
+
+
+//-------------------------------------------------
+/*
+ * public class Prac33 { static Scanner sc = new Scanner(System.in);
+ * 
+ * public static void vowelCount(String str) {
+ * 
+ * 
+ * String words[]=str.trim().toLowerCase().split(" ");
+ * 
+ * Map<String,Integer>hm= new LinkedHashMap<String, Integer>();
+ * 
+ * for(String word:words) {
+ * 
+ * if(!word.isBlank()) 
+ * if(hm.containsKey(word)) 
+ * { 
+ * hm.put(word, hm.get(word)+1);
+ * }
+ * 
+ * 
+ * else {
+ * 
+ * hm.put(word, 1); }
+ * 
+ * }
+ * 
+ * 
+ * 
+ * Set<Map.Entry<String, Integer>> entryset = hm.entrySet();
+ * 
+ * for (Map.Entry<String, Integer> es1 : entryset) {
+ * 
+ * System.out.println(es1.getKey() + ":" + es1.getValue());
+ * 
+ * }
+ * 
+ * 
+ * 
+ * }
+ * 
+ * public static void main(String[] args) {
+ * 
+ * System.out.println("Enter the required string"); String str = sc.nextLine();
+ * vowelCount(str);
+ * 
+ * }
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
  * 

@@ -3,36 +3,86 @@ package JavaPrac1;
 public class StringPrac44 {
 
 	public static void main(String[] args) {
-
-		String str = "    I love java";
 		
-
-
-		String str1[] = str.trim().split(" ");
+	String str="I love java";
+	
+	
+	String words[]=str.trim().split(" ");
+	
+	for(int i=0 ; i<=words.length-1; i++) {
 		
-		int count= str1.length;
-
-		String reverseString = "";
-
-	for(String str2:str1)
+		
+	StringBuilder sb= new StringBuilder(words[i]);
+	
+	if(i%2==1)
 	{
 		
-		String reverseWord="";
+	words[i]=sb.reverse().toString();
+	}
 		
-		for(int i=str2.length()-1; i>=0; i--)
+		
+	}
+		
+		String result=String.join(" ", words);
+		
+		System.out.println(result);
+		
+	}
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+		/*String str = "    I love java";
+		
+		String words[]= str.trim().split(" ");
+		String reverseString="";
+
+		for(int i=0; i<words.length-1; i++)
 		{
 			
-			reverseWord=reverseWord+str2.charAt(i)+" ";
+			String word=words[i];
+			String reverseWord="";
+			
+			for(int j=word.length()-1; j>=0; j--)
+			{
+				
+				reverseWord=reverseWord+word.charAt(j);
+			}
+			
+			if(i%2==1)
+			{
+				
+			
+			reverseString=reverseString+reverseWord+" ";
+			}
+			
+			else {
+				
+				reverseString = reverseString + word + " ";
+			}
 		}
 		
-		reverseString=reverseString+reverseWord+" ";
-	}
-	
-	System.out.println("The reversal is "+ reverseString);
-	
-	System.out.println(count);
-	}
-}
+		if (words.length % 2 == 1) {
+            reverseString = reverseString + words[words.length - 1];
+        }
+		
+		System.out.println(reverseString);
+		
+	}	
+		
+}*/
 /*
  * for (int i = 0; i < str1.length; i++) { String word = str1[i];
  * 
