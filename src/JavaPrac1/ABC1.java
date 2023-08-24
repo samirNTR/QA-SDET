@@ -1,52 +1,56 @@
- package JavaPrac1;
+package JavaPrac1;
 
+import java.util.LinkedHashSet;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
 
 public class ABC1 {
 
-	// static Scanner sc= new Scanner(System.in);------------I LOVE JAVA to JAVA
-	// LOVE I
-
 	static Scanner sc = new Scanner(System.in);
 
-	public static void main(String[] args) {
+	public static void charCount(String str1) {
+		Map<Character, Integer> hm = new LinkedHashMap<Character, Integer>();
 
-		String str="  Welcome to capgemini now";
-		String [] str1=str.trim().split(" ");
-		int count=str1.length;
-		String rev="";
+		char ch[] = str1.toCharArray();
+
+		for (Character c : ch) {
+			if (!String.valueOf(c).isBlank())
+
+				if (hm.containsKey(c)) {
+					hm.put(c, hm.get(c)+1);
+				}
+
+				else {
+					
+					hm.put(c, 1);
+				}
+				
+		}
 		
-		for(int i=0 ; i<str1.length-1 ;i++)
+		StringBuilder sb= new StringBuilder();
+		Set<Map.Entry<Character, Integer>> entryset=hm.entrySet();
+		
+		for(Map.Entry<Character, Integer>es1:entryset)
 		{
+			sb.append(es1.getKey());
 			
-			if(i%2==1)
-			{
-	
-			StringBuilder sb= new StringBuilder(str1[i]);
-			 
-			str1[i]=sb.reverse().toString();
+			//if(es1.getValue()>1)
+			System.out.println(es1.getKey()+":"+ es1.getValue());
 			
 		}
-		}
 		
-		String result= String.join(" ",str1);
-		System.out.println(result);
-		System.out.println(count);
-		
-		/*
-		 * for(int i= str1.length-1; i>=0; i--) {
-		 * 
-		 * rev=rev+str1[i]+" ";
-		 * 
-		 * }
-		 * 
-		 * System.out.println("The reversal is:\n" +rev); System.out.println(count);
-		 * 
-		 * if(rev.equalsIgnoreCase(str)) {
-		 * 
-		 * System.out.println("Its a palindrome"); }
-		 * 
-		 * else { System.out.println("Not a palindrome"); }
-		 */
+		System.out.println("String without duplicate character now:- "+ sb.toString());
+
+
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Enter the required string");
+		String str1 = sc.nextLine();
+		charCount(str1);
 	}
 }
