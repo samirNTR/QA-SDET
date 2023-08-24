@@ -5,7 +5,7 @@ import java.util.LinkedHashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class removeDuplicate {
+public class removeDuplicateWord {
 //Remove duplicate word from String
 	static Scanner sc = new Scanner(System.in);
 
