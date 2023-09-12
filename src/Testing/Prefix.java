@@ -29,8 +29,8 @@ public class Prefix {
         while (i < end && a[0].charAt(i) == a[size - 1].charAt(i))
             i++;
 
-        String pre = a[0].substring(0, i);
-        return pre;
+        String prefix = a[0].substring(0, i);
+        return prefix;
     }
 
     public static void main(String[] args) {
