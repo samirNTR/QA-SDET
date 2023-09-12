@@ -14,7 +14,7 @@ public class MaxOccurringCharacter {
         char ch[] = str1.toCharArray();
         char maxChar = ' ';
         
-        ;
+        
         int maxCount = 0;
 
         for (char c : ch) {

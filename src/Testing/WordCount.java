@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
-public class WordCountWithoutGetOrDefault {
+public class WordCount {
 
     static Scanner sc = new Scanner(System.in);
 
@@ -36,7 +36,6 @@ public class WordCountWithoutGetOrDefault {
 
         for (Map.Entry<Character, Integer> entry : entrySet) {
         	
-        	if(entry.getValue()>1)
             System.out.println(entry.getKey() + ":>" + entry.getValue());
             //Integer duplicateCount = duplicateMap.get(entry.getKey());
            // if (duplicateCount != null && duplicateCount > 1) {

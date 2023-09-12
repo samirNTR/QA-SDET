@@ -11,43 +11,42 @@ public class Prac33 {
 
 	public static void vowelCount(String str) {
 
-		
-		String words[]=str.trim().toLowerCase().split(" ");
-		
-		Map<String,Integer>hm= new LinkedHashMap<String, Integer>();
-		
-	for(String word:words)
-	{
-		
-		if(!word.isBlank())
-		{
-		
-			if(hm.containsKey(word))
-			{
-				hm.put(word, hm.get(word)+1);
-				
-			}
-			
-			else
-			{
-				
-				hm.put(word, 1);
-			}
-			
-		}
-		
-		
-	}
-	
-	
-Set<Map.Entry<String, Integer>>entryset=hm.entrySet();
+		String words[] = str.trim().toLowerCase().split(" ");
 
-for(Map.Entry<String, Integer>es1:entryset)
-{
-	if(es1.getValue()>1)
-	System.out.println(es1.getKey()+":"+es1.getValue());
-	
-}
+		Map<String, Integer> hm = new LinkedHashMap<String, Integer>();
+
+		for (String word : words) {
+
+			if (!word.isBlank()) {
+
+				if (hm.containsKey(word)) {
+					hm.put(word, hm.get(word) + 1);
+
+				}
+
+				else {
+
+					hm.put(word, 1);
+				}
+
+			}
+
+		}
+
+		Set<Map.Entry<String, Integer>> entryset = hm.entrySet();
+
+		boolean foundDuplicate = false;
+		for (Map.Entry<String, Integer> es1 : entryset) {
+			if (es1.getValue() > 1) {
+				System.out.println(es1.getKey() + ":" + es1.getValue());
+
+				foundDuplicate = true;
+			}
+		}
+
+		if (!foundDuplicate) {
+			System.out.println("No repeated/Duplicate word present");
+		}
 
 	}
 
