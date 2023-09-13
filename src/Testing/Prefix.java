@@ -35,16 +35,13 @@ public class Prefix {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the number of strings: ");
-        int numStrings = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character
-
-        String[] input = new String[numStrings];
-        for (int i = 0; i < numStrings; i++) {
-            System.out.print("Enter string " + (i + 1) + ": ");
-            input[i] = scanner.nextLine().toLowerCase(); // Convert input to lowercase
-        }
+        System.out.print("Enter a comma-separated list of words: ");
+        String inputLine = scanner.nextLine();
         scanner.close();
+
+        /* Split the input line by commas to get an array of words */
+        String[] input = inputLine.split(",");
+
 
         System.out.println("The longest Common Prefix is : " +
                 longestCommonPrefix(input));
