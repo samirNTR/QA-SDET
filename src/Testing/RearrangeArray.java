@@ -1,4 +1,4 @@
-package JavaPrac1;
+package Testing;
 
 import java.util.Arrays;
 import java.util.Comparator;
