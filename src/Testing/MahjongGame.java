@@ -1,8 +1,8 @@
 package Testing;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
-
 public class MahjongGame {
 
     public static boolean complete(String tiles) {
@@ -18,15 +18,22 @@ public class MahjongGame {
 
         // Count the number of pairs and triples
         for (int count : tileCount.values()) {
+            if (count >= 3) {
+                triples += count / 3;
+                count %= 3;
+            }
             pairs += count / 2;
-            triples += count / 3;
         }
 
-        // Check if there is exactly one pair and the rest can be grouped into triples
-        return pairs == 1 && (pairs + triples) * 2 == tiles.length();
+        // Check if there is exactly one pair and all triples are used
+        if (pairs == 1 && triples >= tileCount.size() - 1) {
+            return true;
+        }
+
+        return false;
     }
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
         String tiles_1 = "88844";
         String tiles_2 = "99";
         String tiles_3 = "55555";
@@ -45,24 +52,24 @@ public class MahjongGame {
         String tiles_16 = "64444333355556";
         String tiles_17 = "7";
 
-        System.out.println(complete(tiles_1));  // true
-        System.out.println(complete(tiles_2));  // true
-        System.out.println(complete(tiles_3));  // true
-        System.out.println(complete(tiles_4));  // true
-        System.out.println(complete(tiles_5));  // true
-        System.out.println(complete(tiles_6));  // false
-        System.out.println(complete(tiles_7));  // false
-        System.out.println(complete(tiles_8));  // false
-        System.out.println(complete(tiles_9));  // false
-        System.out.println(complete(tiles_10)); // false
-        System.out.println(complete(tiles_11)); // false
-        System.out.println(complete(tiles_12)); // false
-        System.out.println(complete(tiles_13)); // false
-        System.out.println(complete(tiles_14)); // false
-        System.out.println(complete(tiles_15)); // false
-        System.out.println(complete(tiles_16)); // false
-        System.out.println(complete(tiles_17)); // false
-    }
+    System.out.println(complete(tiles_1));  // true
+    System.out.println(complete(tiles_2));  // true
+    System.out.println(complete(tiles_3));  // true
+    System.out.println(complete(tiles_4));  // true
+    System.out.println(complete(tiles_5));  // true
+    System.out.println(complete(tiles_6));  // false
+    System.out.println(complete(tiles_7));  // false
+    System.out.println(complete(tiles_8));  // false
+    System.out.println(complete(tiles_9));  // false
+    System.out.println(complete(tiles_10)); // false
+    System.out.println(complete(tiles_11)); // false
+    System.out.println(complete(tiles_12)); // false
+    System.out.println(complete(tiles_13)); // false
+    System.out.println(complete(tiles_14)); // false
+    System.out.println(complete(tiles_15)); // false
+    System.out.println(complete(tiles_16)); // false
+    System.out.println(complete(tiles_17)); // false
+}
 }
 
 /*
