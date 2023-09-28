@@ -8,8 +8,11 @@ public class ABC2 {
 
 		while (left < right) 
 		{
+			
+
 			if ( Character.toLowerCase(word.charAt(left)) != Character.toLowerCase(word.charAt(right))    )
 			
+				
 			{
 				return false;
 			}
@@ -25,7 +28,7 @@ public class ABC2 {
 
 	public static void main(String[] args) {
 
-		String str = "mom dad child malayalam Madam";
+		String str = "mom dad child malayalam MadaM";
 
 		String words[] = str.trim().split(" ");
 

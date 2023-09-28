@@ -31,6 +31,7 @@ public class RearrangeArray {
 	public static void main(String[] args) {
 		int[] a = { 1, 3, -2, -1, -3, 2 };
 
+	
 		// Separate positive and negative numbers
 		List<Integer> positive = new ArrayList<>();
 		List<Integer> negative = new ArrayList<>();
