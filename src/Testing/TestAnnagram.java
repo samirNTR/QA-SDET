@@ -23,10 +23,11 @@ public class TestAnnagram {
 		Arrays.sort(ch2);
 
 	  for( int i=0 ;i<ch1.length; i++)
-
+	  {
 		if(ch1[i]!= ch2[i])
 
 			return false;
+	  }
 	        return true;
 
 		}
@@ -39,14 +40,14 @@ public static void main(String[] args)
 	str1=sc.nextLine();
 	str2=sc.nextLine();
 
-	char[] ch1= str1.toCharArray();
-	 char[] ch2= str2.toCharArray();
+	char[] ch1= str1.toLowerCase().toCharArray();
+	 char[] ch2= str2.toLowerCase().toCharArray();
 
 	if(Anagram1(ch1,ch2))
 	{
 
 
-		System.out.println("both are anagram");
+		System.out.println("both are annagram");
 	}
 
 	else {

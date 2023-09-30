@@ -2,24 +2,20 @@ package JavaPrac1;
 
 public class ABC2 {
 
-	public static boolean countPalindrome(String word)
-	{
+	public static boolean countPalindrome(String word) {
 		int left = 0, right = word.length() - 1;
 
-		while (left < right) 
-		{
-			
+		while (left < right) {
 
-			if ( Character.toLowerCase(word.charAt(left)) != Character.toLowerCase(word.charAt(right))    )
-			
-				
+			if (Character.toLowerCase(word.charAt(left)) != Character.toLowerCase(word.charAt(right)))
+
 			{
 				return false;
 			}
-		
+
 			left++;
 			right--;
-			
+
 		}
 
 		return true;
@@ -33,16 +29,13 @@ public class ABC2 {
 		String words[] = str.trim().split(" ");
 
 		int count = 0;
-		for (String word : words) 
-		{
-			
-			if (countPalindrome(word)) 
-			{
+		for (String word : words) {
+
+			if (countPalindrome(word)) {
 				count++;
 			}
 		}
-		
-		
-		System.out.println("The total palindrome words are "+count);
+
+		System.out.println("The total palindrome words are " + count);
 	}
 }
