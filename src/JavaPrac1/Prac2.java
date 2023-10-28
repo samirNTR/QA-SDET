@@ -23,7 +23,7 @@ public class Prac2 {
 		mySet.add(s2);
 		}
 
-	Iterator it= mySet.iterator();
+	Iterator<String> it= mySet.iterator();
 
 	while(it.hasNext())
 	{

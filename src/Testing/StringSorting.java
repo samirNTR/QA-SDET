@@ -21,7 +21,7 @@ public class StringSorting {
 
 		{
 
-			for(int j=i+1;j<ch.length;j++)
+			for(int j=i+1; j<ch.length;j++)
 			{
 
 

@@ -33,10 +33,10 @@ public class Prac33 {
 
 		}
 
-		Set<Map.Entry<String, Integer>> entryset = hm.entrySet();
+		//Set<Map.Entry<String, Integer>> entryset = hm.entrySet();
 
 		boolean foundDuplicate = false;
-		for (Map.Entry<String, Integer> es1 : entryset) {
+		for (Map.Entry<String, Integer> es1 : hm.entrySet()) {
 			if (es1.getValue() > 1) {
 				System.out.println(es1.getKey() + ":" + es1.getValue());
 

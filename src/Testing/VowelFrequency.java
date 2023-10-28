@@ -35,8 +35,8 @@ import java.util.Set;
 
 	        // Print the frequency of each vowel
 
-	        Set<Map.Entry<Character,Integer> >entrySet=hm.entrySet();
-	        for (Map.Entry<Character, Integer> entry : entrySet)
+	        //Set<Map.Entry<Character,Integer> >entrySet=hm.entrySet();
+	        for (Map.Entry<Character, Integer> entry : hm.entrySet())
 	        {
 	            System.out.println(entry.getKey() + "->" + entry.getValue() +" times");
 	        }
