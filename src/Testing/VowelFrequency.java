@@ -46,7 +46,7 @@ import java.util.Set;
 	    }
 
 	    public static void main(String[] args) {
-	        String input = "Hello World";
+	        String input = "I love java";
 	        countVowel(input);
 	    }
 	}

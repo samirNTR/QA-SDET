@@ -14,13 +14,14 @@ public class PrimeNumber {
 				
 				if(number%i==0)
 				{
-					temp=temp+1;
+					temp++;
 					
 				}
 			}
+			
 				if(temp==0)
 				{
-					System.out.println(number);
+					System.out.print(number+" ");
 				}
 			}
 			

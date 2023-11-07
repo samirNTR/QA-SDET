@@ -28,9 +28,13 @@ public class Test {
 		t1.displayInfo();
 		Test t2=t1;
 		t2.age=35;
-
-		t2.displayInfo();
-		t1.displayInfo();
+     t2.displayInfo();
+	 t1.displayInfo();  
+	 Test t3=t2;
+	 
+	 t3.age=39;
+	 t3.displayInfo();
+	 //--3
 		/*
 		 * Test t2=t1; t2.age=89;
 		 */

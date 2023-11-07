@@ -22,9 +22,9 @@ public class StringWordCount {
             }
         }
 
-        Set<Map.Entry<String, Integer>> entrySet = hm.entrySet();
+        //Set<Map.Entry<String, Integer>> entrySet = hm.entrySet();
 
-        for (Map.Entry<String, Integer> entry : entrySet) {
+        for (Map.Entry<String, Integer> entry : hm.entrySet()) {
         //	if(entry.getValue()>1)
             System.out.println(entry.getKey() + ":>" + entry.getValue());
         }
