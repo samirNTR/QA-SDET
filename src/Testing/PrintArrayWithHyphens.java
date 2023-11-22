@@ -3,7 +3,7 @@ package Testing;
 
 public class PrintArrayWithHyphens {
     public static void main(String[] args) {
-        int[] a = {0, 1, 1, 0, 1, 0, 1};
+        int[] a = {0, 1, 1, 0, 1, 0, 1,0,1,0};
         rearrangeArray(a);
         printArrayWithHyphens(a);
     }
