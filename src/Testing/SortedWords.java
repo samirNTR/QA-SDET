@@ -31,6 +31,7 @@ public class SortedWords {
          
          List<String> al= new ArrayList<>(hm.keySet());
           Collections.sort(al);
+          // Collections.sort(al,Collections.reverseOrder()); descending order
           System.out.println(al);
           
           
