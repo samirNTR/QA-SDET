@@ -67,9 +67,13 @@ public class SortedWords {
 
 
 
-/*for (String word : words) {
-    char[] ch = word.toCharArray();
-    Arrays.sort(ch); // Sorting in ascending order
+/*for(String word:words)
+{
+    char[] ch= word.toCharArray();
+    
+    Arrays.sort(ch);
+    System.out.println(new String(ch)+" ");
+}
 
     // Reversing the sorted characters to get descending order
     for (int i = 0; i < ch.length / 2; i++) {

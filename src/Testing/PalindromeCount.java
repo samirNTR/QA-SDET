@@ -38,6 +38,14 @@ public class PalindromeCount {
 		System.out.println("Number of palindrome words: " + palindromeCount);
 	}
 }
-
+/*
+ * for(String word:words) {
+ * 
+ * if(word.charAt(0)==word.charAt(word.length()-1)) 
+ * count++;
+ * 
+ * 
+ * }
+ */
 
 
