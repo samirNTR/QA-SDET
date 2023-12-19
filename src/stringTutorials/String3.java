@@ -10,7 +10,9 @@ public class String3 {
 	public static void replaceFun(String str)
 	{
 		
-		StringBuffer alpha= new StringBuffer(), num=new StringBuffer(), special= new StringBuffer();
+		StringBuilder alpha= new StringBuilder(), 
+				num=new StringBuilder(), 
+				special= new StringBuilder();
 		
 		for(int i=0; i<str.length(); i++)
 		{
@@ -33,7 +35,7 @@ public class String3 {
 		}
 		
 		
-		System.out.println(num);
+		System.out.println(special);
 		
 		/*
 	}	 * str=str.replaceAll("[A-Za-z0-9 ]", " ");

@@ -15,11 +15,12 @@ public class Prefix {
 
 		/* Convert all strings to lowercase for case-insensitive comparison */
 		for (int i = 0; i < size; i++) {
-			a[i] = a[i].toLowerCase();
+			a[i] = a[i].toLowerCase();	
 		}
 
 		/* Sort the array of strings */
 		Arrays.sort(a);
+
 
 		/* Find the minimum length from the first and last string */
 		

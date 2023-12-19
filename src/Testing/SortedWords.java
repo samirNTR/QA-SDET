@@ -56,14 +56,31 @@ public class SortedWords {
         			  }
         		  }
         	  }
-        	//  System.out.println(new String(ch)+" ");
-        	  System.out.println(ch+" ");
+        	System.out.println(new String(ch)+" ");
+        	  //System.out.println(ch+" ");
         	 
           }
         
     }    
     
 }
+
+
+
+/*for (String word : words) {
+    char[] ch = word.toCharArray();
+    Arrays.sort(ch); // Sorting in ascending order
+
+    // Reversing the sorted characters to get descending order
+    for (int i = 0; i < ch.length / 2; i++) {
+        char temp = ch[i];
+        ch[i] = ch[ch.length - 1 - i];
+        ch[ch.length - 1 - i] = temp;
+    }
+
+    System.out.println("Sorted characters in descending order of " + word + ": " + new String(ch));
+*/
+
     
 /*
         for (String word : words) {
