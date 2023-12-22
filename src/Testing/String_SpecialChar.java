@@ -22,9 +22,14 @@ public class String_SpecialChar {
 				count++;
 			}
 		}
+ str=str.replaceAll("[a-zA-Z0-9]", " ");
 
 
-		System.out.println("count is : "+ count);
+str=str.replaceAll("  +", " ");   //jHAAUIAHU
+str=str.trim();
+
+System.out.println(str);
+System.out.println("count is : "+ count);
 	}
 
 }

@@ -37,7 +37,7 @@ public class StringSorting {
 			}
 
 		}
-		 System.out.println(ch);
+		 System.out.println(new String(ch));
 		System.out.println(Arrays.toString(ch));
 
 	}
