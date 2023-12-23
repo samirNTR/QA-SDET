@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class TableDataExample {
+public class ListOfMap {
 
     public static void main(String[] args) {
         // Creating a List of Maps to store table data

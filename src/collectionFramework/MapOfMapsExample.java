@@ -40,7 +40,9 @@ public class MapOfMapsExample {
                 System.out.println("Details of " + name + ":");
                 System.out.println("City: " + city);
                 System.out.println("Hobbies: " + hobbies);
-            } else {
+            } 
+            else 
+            {
                 System.out.println("Details not found for " + name);
             }
 
