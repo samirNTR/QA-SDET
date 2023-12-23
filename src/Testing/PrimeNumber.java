@@ -40,7 +40,9 @@ public class PrimeNumber {
 	 * for (int i = 2; i <= Math.sqrt(num); i++) 
 	 * 
 	 * {
-	 *  if (num % i == 0) { return false;
+	 *  if (num % i == 0) { 
+	 *  
+	 *  return false;
 	 * } 
 	 * }
 	 * 
@@ -53,7 +55,9 @@ public class PrimeNumber {
 	 * 
 	 * for (int i = 2; i <= 100; i++) 
 	 * {
-	 *  if (isPrime(i)) { System.out.print(i + " ");
+	 *  if (isPrime(i)) 
+	 *  
+	 *  { System.out.print(i + " ");
 	 * } } } }
 	 * 
 	 * 
