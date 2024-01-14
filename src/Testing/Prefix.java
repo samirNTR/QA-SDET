@@ -10,7 +10,7 @@ public class Prefix {
 		if (size == 0)
 			return "";
 
-		if (size == 1)
+		if (size == 1)	
 			return a[0];
 
 		/* Convert all strings to lowercase for case-insensitive comparison */

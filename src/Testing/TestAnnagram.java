@@ -43,6 +43,8 @@ public static void main(String[] args)
 	char[] ch1= str1.toLowerCase().toCharArray();
 	 char[] ch2= str2.toLowerCase().toCharArray();
 
+	 
+
 	if(Anagram1(ch1,ch2))
 	{
 
@@ -60,3 +62,28 @@ public static void main(String[] args)
 
 
 }
+
+
+
+/*
+ * public static void main(String[] args) { String str1 = "Silent"; String str2
+ * = "Listen";
+ * 
+ * char[] ch1 = str1.toLowerCase().toCharArray(); 
+ * char[] ch2 = str2.toLowerCase().toCharArray();
+ * 
+ * Arrays.sort(ch1); Arrays.sort(ch2);
+ * 
+ * boolean isAnagram = Arrays.equals(ch1, ch2); 
+ * if (isAnagram && str1.length()
+ * == str2.length()) { System.out.println("It's an Anagram"); } else {
+ * System.out.println("Not an Anagram"); } } }
+ */
+
+
+
+
+
+
+
+

@@ -14,6 +14,8 @@ public class StringFilterAndUppercase {
         List<String> filteredUpperCaseStrings = new ArrayList<>();
         for (String str : inputStrings) {
             if (str.startsWith("a"))
+            	
+            	
             {
                 filteredUpperCaseStrings.add(str.substring(0, 1).toLowerCase() + str.substring(1).toUpperCase());
             }
