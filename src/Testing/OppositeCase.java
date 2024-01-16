@@ -13,11 +13,15 @@ public class OppositeCase {
 
 	private static String oppositeCase(String input) {
 		char[] charArray = input.toCharArray();
-		for (int i = 0; i < charArray.length; i++) {
+		for (int i = 0; i < charArray.length; i++) 
+		{
 			char currentChar = charArray[i];
-			if (Character.isUpperCase(currentChar)) {
+			if (Character.isUpperCase(currentChar))
+			{
 				charArray[i] = Character.toLowerCase(currentChar);
-			} else if (Character.isLowerCase(currentChar)) {
+			} 
+			else if (Character.isLowerCase(currentChar))
+			{
 				charArray[i] = Character.toUpperCase(currentChar);
 			}
 		}
