@@ -15,14 +15,16 @@ class Record {
     }
 
     // Method to add a record to the List
-    public void addRecord(String key, String value) {
+    public void addRecord(String key, String value)
+    {
         Map<String, String> record = new HashMap<>();
         record.put(key, value);
         records.add(record);
     }
 
     // Method to fetch all records
-    public List<Map<String, String>> getAllRecords() {
+    public List<Map<String, String>> getAllRecords() 
+    {
         return records;
     }
 
@@ -36,6 +38,9 @@ class Record {
         recordHandler.addRecord("Name", "John");
         recordHandler.addRecord("Age", "25");
         recordHandler.addRecord("City", "New York");
+        recordHandler.addRecord("Name", "Sonu");
+        recordHandler.addRecord("Age", "30");
+        recordHandler.addRecord("City", "New Delhi");
 
         // Fetch all records
         List<Map<String, String>> allRecords = recordHandler.getAllRecords();
