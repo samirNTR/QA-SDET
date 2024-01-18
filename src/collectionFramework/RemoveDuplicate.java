@@ -27,9 +27,9 @@ public class RemoveDuplicate {
 		
 		System.out.println("Duplicate values are: ");
 		
-		for(String item: uniqueValues)
+		for(Object item: uniqueValues)
 		{
-			if(Collections.frequency(list, item)>1)
+			if(Collections.frequency(list,item)>1)
 			{
 				System.out.println(item);
 			}
