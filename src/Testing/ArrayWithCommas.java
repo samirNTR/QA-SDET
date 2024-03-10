@@ -34,3 +34,23 @@ public class ArrayWithCommas {
     }
 }
 
+/*
+ * int a[] = {1, 0, 0, 1, 0, 1};
+ * 
+ * //boolean commaNeeded = false;
+ * 
+ * for (int i : a) { if (i == 0) {
+ * 
+ * System.out.print("0");
+ * 
+ * } }
+ * 
+ * System.out.print("-");
+ * 
+ * for (int i : a) { if (i == 1) {
+ * 
+ * System.out.print("1");
+ * 
+ * } } } }
+ */
+
