@@ -1,38 +1,34 @@
 package interviewExp;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class RemoveConsecutiveDuplicateCharacters {
-	 public static void main(String[] args) {
-	        String str1 = "abbcdba";   //acdba
-	        String str2 = "aabbcda";   //cda
+    public static void main(String[] args) {
+	 String str1 = "abbcdba";   //acdba
+     String str2 = "aabbcda";   //cda
 
-	        System.out.println("Input: " + str1);
-	        System.out.println("Output: " + removeConsecutive(str1));
+     System.out.println("Input: " + str1);
+     System.out.println("Output: " + removeConsecutive(str1));
+     
+     System.out.println("Input: " + str2);
+     System.out.println("Output: " + removeConsecutive(str2));
+ }
 
-	        System.out.println("Input: " + str2);
-	        System.out.println("Output: " + removeConsecutive(str2));
-	    }
+ public static String removeConsecutive(String str) {
+     StringBuilder result = new StringBuilder();
 
-	    public static String removeConsecutive(String str) {
-	        List<Character> result = new ArrayList<>();
+     for (int i = 0; i < str.length(); i++) 
+     {
+         char currentChar = str.charAt(i);
 
-	        for (int i = 0; i < str.length(); i++) {
-	            char currentChar = str.charAt(i);
+         // Append current character to result if it's different from the next character
+         if (i == str.length() - 1 || currentChar != str.charAt(i + 1)) 
+         {
+             result.append(currentChar);
+         } else {
+             // Skip the next character if it's the same as the current one
+             i++;
+         }
+     }
 
-	            // If the list is empty or the current character is different from the last character in the list
-	            if (result.isEmpty() || currentChar != result.get(result.size() - 1)) {
-	                result.add(currentChar);
-	            }
-	        }
-
-	        // Convert the list to a string
-	        StringBuilder sb = new StringBuilder();
-	        for (char c : result) {
-	            sb.append(c);
-	        }
-
-	        return sb.toString();
-	    }
-	}
+     return result.toString();
+ }
+}

@@ -3,7 +3,7 @@ package interviewExp;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RemoveSidwwiseDuplicateCharacter {
+public class RemoveSidewiseDuplicateCharacter {
 
 	public static void main(String[] args) {
 		String str1 = "abbbbcdbaaad"; // abcdbad
