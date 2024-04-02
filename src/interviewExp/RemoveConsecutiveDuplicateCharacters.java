@@ -2,7 +2,7 @@ package interviewExp;
 
 public class RemoveConsecutiveDuplicateCharacters {
     public static void main(String[] args) {
-	 String str1 = "abbcdba";   //acdba
+	 String str1 = "abbcdbba";   //acdba
      String str2 = "aabbcda";   //cda
 
      System.out.println("Input: " + str1);
@@ -14,7 +14,7 @@ public class RemoveConsecutiveDuplicateCharacters {
 
  public static String removeConsecutive(String str) {
      StringBuilder result = new StringBuilder();
-
+int count=0;
      for (int i = 0; i < str.length(); i++) 
      {
          char currentChar = str.charAt(i);
@@ -23,6 +23,7 @@ public class RemoveConsecutiveDuplicateCharacters {
          if (i == str.length() - 1 || currentChar != str.charAt(i + 1)) 
          {
              result.append(currentChar);
+            
          } else {
              // Skip the next character if it's the same as the current one
              i++;
