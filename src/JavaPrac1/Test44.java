@@ -7,7 +7,7 @@ public class Test44 {
 		
 		int a=10;
 		
-		a=a++ +  ++a  -  ++a +  a++;
+		a=a++ +  ++a  -  ++a +  a++;   //10 + 12 - 13 + 12
 	
 		
 		

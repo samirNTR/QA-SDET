@@ -2,7 +2,7 @@ package interviewExp;
 
 public class RemoveConsecutiveDuplicateCharacters {
     public static void main(String[] args) {
-	 String str1 = "abbcdbba";   //acdba
+	 String str1 = "abbcdbba";   //acda
      String str2 = "aabbcda";   //cda
 
      System.out.println("Input: " + str1);
