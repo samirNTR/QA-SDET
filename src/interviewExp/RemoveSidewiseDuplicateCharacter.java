@@ -5,7 +5,7 @@ package interviewExp;
 public class RemoveSidewiseDuplicateCharacter {
 
 	public static void main(String[] args) {
-		String str = "abbddddcdbba"; //abdcdba
+		String str = "abcabcbb"; //abdcdba
 
 		StringBuilder sb = new StringBuilder();
 

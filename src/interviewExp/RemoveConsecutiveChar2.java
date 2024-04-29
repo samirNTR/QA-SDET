@@ -4,7 +4,7 @@ public class RemoveConsecutiveChar2 {
 	
     public static void main(String[] args) {
         
-        String str = "aaabbbbbbbcddaed";  //cdaed
+        String str = "aaabbbbbbbcddaed";  //caed
         StringBuilder sb = new StringBuilder();
         
         int count = 1; // Initialize count for the first character
