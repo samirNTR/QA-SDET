@@ -2,19 +2,15 @@ package interviewExp;
 
 
 public class LongestSubstring {
+	
     public static void main(String[] args) {
         // Input string
         String str = "aaabbbbbce";
-        
-        // Calling the findLongestSubstring method and printing the result
-        System.out.println("Longest substring: " + findLongestSubstring(str));
-    }
-
-    // Method to find the longest substring of consecutive characters
-    public static String findLongestSubstring(String str) {
-        // Check if the input string is null or empty
-        if (str == null || str.length() == 0) {
-            return ""; // If it is, return an empty string
+      
+        if (str == null || str.length() == 0) 
+        {
+        	System.out.println("Input string is null or empty.");
+            return ;// If it is, return an empty string
         }
 
         // Variables to store the length and starting index of the longest substring found
@@ -48,6 +44,6 @@ public class LongestSubstring {
         }
 
         // Return the longest substring of consecutive characters
-        return str.substring(start, start + maxLength);
+       System.out.println(str.substring(start, start + maxLength));
     }
 }
