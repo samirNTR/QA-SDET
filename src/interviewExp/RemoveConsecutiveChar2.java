@@ -18,15 +18,16 @@ public class RemoveConsecutiveChar2 {
             {
                 
                 // Append the current character to the StringBuilder based on the count
-                if (count < 2) 
-                {
-                    sb.append(currentChar);
-                }
-                
-                // Reset the count for the next character
-                count = 1;
-                
-            } 
+				if (count < 2)
+				{
+					sb.append(currentChar);
+				}
+
+				// Reset the count for the next character
+				count = 1;
+
+	    	} 
+           
             else 
             {
                 // Increment the count if the current character is the same as the next character
