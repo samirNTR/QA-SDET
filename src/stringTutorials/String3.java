@@ -7,6 +7,8 @@ public class String3 {
 	static Scanner sc= new Scanner(System.in);
 	
 	
+	
+	
 	public static void replaceFun(String str)
 	{
 		
@@ -57,6 +59,8 @@ public class String3 {
 		// TODO Auto-generated method stub
 		
 		String str="ABccf&&   **890099";
+		
+		
 		replaceFun(str);
 	
 }
