@@ -7,12 +7,14 @@ public class Reversal_Each_Part {
 		String reverse = "";
 		String str = "I love java, Java loves me";
 
-		String[] words = str.trim().split(",");
+		String[] words = str.trim().split(",");              //  String[] words = str.trim().split("\\. ");    
 
-		for (String word : words) {
+		for (String word : words) 
+		{
 			String parts[] = word.trim().split(" ");
 
-			for (int i = parts.length - 1; i >= 0; i--) {
+			for (int i = parts.length - 1; i >= 0; i--) 
+			{
 				reverse += parts[i] + " ";
 			}
 
