@@ -1,4 +1,4 @@
-package interviewExp;
+package interviewExp; 
 
 public class RemoveConsecutiveChar2 {
 	

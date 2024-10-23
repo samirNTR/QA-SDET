@@ -21,7 +21,7 @@ public class PairSum {
 				set.remove(complement);
 			} else {
 				set.add(number);
-			}
+			}	
 		}
 
 		// Remove the trailing comma and space, and add the final period
