@@ -5,49 +5,57 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class MinimumTimeDifference {
-    
-    // Method to calculate the minimum time difference
-    public static void count(List<String> times) {
-        // List to store time in minutes
+import java.util.*;
+
+class MinimumTimeDifference {
+    public int findMinDifference(List<String> timePoints) {
+        // Convert the time points into minutes from "00:00"
         List<Integer> minutesList = new ArrayList<>();
         
-        // Convert each time string to minutes
-        for (String time : times) {
-            String[] splitTime = time.split(":");
-            int hours = Integer.parseInt(splitTime[0]);
-            int minutes = Integer.parseInt(splitTime[1]);
+        for (String time : timePoints) {
+            String[] parts = time.split(":");
+            int hours = Integer.parseInt(parts[0]);
+            int minutes = Integer.parseInt(parts[1]);
             int totalMinutes = hours * 60 + minutes;
             minutesList.add(totalMinutes);
         }
         
-        // Sort the list of minutes
+        // Sort the time points in minutes
         Collections.sort(minutesList);
         
-        // Initialize the minimum difference to the maximum possible value (1440 minutes in a day)
+        // Initialize the minimum difference as the largest possible value
         int minDifference = Integer.MAX_VALUE;
-
-        // Calculate the minimum difference between consecutive times
-        for (int i = 1; i < minutesList.size(); i++) {
-            minDifference = Math.min(minDifference, minutesList.get(i) - minutesList.get(i - 1));
-        }
-
-        // Handle the circular difference (i.e., across midnight)
-        int circularDifference = (1440 - minutesList.get(minutesList.size() - 1)) + minutesList.get(0);
-        minDifference = Math.min(minDifference, circularDifference);
         
-        // Print the result
-        System.out.println(minDifference);
+        // Compare consecutive time points for minimum difference
+        for (int i = 1; i < minutesList.size(); i++) {
+            int diff = minutesList.get(i) - minutesList.get(i - 1);
+            minDifference = Math.min(minDifference, diff);
+        }
+        
+        // Also check the difference between the first and the last time point,
+        // considering the circular nature of the 24-hour clock.
+        int circularDiff = 1440 - minutesList.get(minutesList.size() - 1) + minutesList.get(0);
+        minDifference = Math.min(minDifference, circularDiff);
+        
+        return minDifference;
     }
 
-    // Main method for testing
     public static void main(String[] args) {
+    	MinimumTimeDifference solution = new MinimumTimeDifference();
+        
         // Test case 1
-        List<String> times1 = Arrays.asList("23:59", "00:00");
-        count(times1);  // Expected output: 1
+        List<String> timePoints1 = Arrays.asList("23:59", "00:00");
+        int result1 = solution.findMinDifference(timePoints1);
+        System.out.println("Minimum difference (Test case 1): " + result1); // Output: 1
 
         // Test case 2
-        List<String> times2 = Arrays.asList("23:59", "00:00", "23:59");
-        count(times2);  // Expected output: 0
+        List<String> timePoints2 = Arrays.asList("00:00", "23:59", "00:00");
+        int result2 = solution.findMinDifference(timePoints2);
+        System.out.println("Minimum difference (Test case 2): " + result2); // Output: 0
+
+        // Test case 3
+        List<String> timePoints3 = Arrays.asList("12:30", "03:45", "06:15", "14:10");
+        int result3 = solution.findMinDifference(timePoints3);
+        System.out.println("Minimum difference (Test case 3): " + result3); // Output: 105 (e.g., difference between 12:30 and 14:10)
     }
 }
