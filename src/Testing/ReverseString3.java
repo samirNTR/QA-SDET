@@ -1,6 +1,5 @@
 package Testing;
 
-import java.util.Queue;
 import java.util.Scanner;
 
 //Reverse the alternate word      I LOVE JAVA-----> I EVOL JAVA

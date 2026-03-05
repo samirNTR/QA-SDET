@@ -28,11 +28,11 @@ public class Array2 {
 
 		}
 
-		//System.out.println(a[i]);
+		System.out.print(a[i]+" , ");
 
 		}
 
-		System.out.println(a[0]);
+		//System.out.println(a[0]);
 
 	}
 }
