@@ -10,7 +10,7 @@ public class MissingNumbersInArray {
 
 		int a[] = { 1, 9, 6, 17 };
 
-		int min = Integer.MAX_VALUE;
+		int min = Integer.MAX_VALUE;             //Value = 2,147,483,647  
 
 		int max = Integer.MIN_VALUE;
 
@@ -32,3 +32,26 @@ public class MissingNumbersInArray {
 
 	}
 }
+
+/*
+ * class Main { public static void main(String[] args) {
+ * 
+ * int a[] = {1,8,6,24};
+ * 
+ * Arrays.sort(a);
+ * 
+ * for(int i = 0; i < a.length - 1; i++) { int current = a[i]; int next =
+ * a[i+1];
+ * 
+ * for(int j = current + 1; j < next; j++) { System.out.print(j + " "); } } } }
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
